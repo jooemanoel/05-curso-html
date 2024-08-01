@@ -30,6 +30,34 @@ strong{
     justify-content: space-between;
 }
 
+.cabecalho__menu {
+    width: 100%;
+    background-color: var(--altColor);
+    animation-name: rolagem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rolagem {
+    0% {
+        background-color: var(--altColor);
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: black;
+        left: 200px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: var(--altColor);
+        left: 0px;
+        top: 0px;
+    }
+}
+
 .cabecalho__menu{
     width: 100vw;
     display: flex;
